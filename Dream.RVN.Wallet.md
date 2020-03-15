@@ -26,7 +26,7 @@ clients.
     Honestly there are things here that I don’t fully comprehend the full use of.  
     
 3.	https://www.mangofarmassets.com/ . Here you have the functions outlined at 
-    https://github.com/MangoFarmAssets/rips/blob/master/rip-0011.mediawiki . The ability to encrypt a file and upload to IPFS.  
+    https://github.com/MangoFarmAssets/rips/blob/master/rip-0011.mediawiki . The ability to encrypt a file and upload to IPFS. 
     Upload to IPFS a 2nd file (json file), encrypted with the receivers PGP public key, which contains the key and location of the 1st 
     encrypted file.  Then send asset to receiver that only receiver address can read and then use to unlock and read the 1st file.  
     “Pirate messaging” a term coined by others.
