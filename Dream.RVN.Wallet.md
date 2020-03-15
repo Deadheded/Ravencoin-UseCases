@@ -15,11 +15,14 @@ I would like to have the additional functions:
     
 In addition to these functions there are three current 2nd layer projects that are only accessible via web sites.  
 
-1.	https://ravenland.org and http://mypin.io/#/ .  These websites allow you to pin an IPFS file to a “Ravencoin” node for persistency.  
+1.	https://ravenland.org and http://mypin.io/#/ .  These websites allow you to pin an IPFS file to a “Ravencoin” node for persistency.
+
     I would also like to see ideas to increase the support of the current nodes Ravenland has.  I believe this is important to the 
     legitimacy of real world use cases. 
     
-2.	https://pocketraven.com .  Fully transparent multi-signature solution which works seamlessly offline and with other Ravencoin clients.
+2.	https://pocketraven.com .  Fully transparent multi-signature solution which works seamlessly offline and with other Ravencoin
+clients.
+
     Honestly there are things here that I don’t fully comprehend the full use of.  
     
 3.	https://www.mangofarmassets.com/ . Here you have the functions outlined at 
