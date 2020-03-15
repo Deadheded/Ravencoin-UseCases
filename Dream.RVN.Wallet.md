@@ -8,7 +8,7 @@ I would like to have the additional functions:
 
 1.	 BIP 44 support.  Blondfrogs is current working on this.
 
-2.	The ability to brows to IPFS attached to asset transactions as messages.
+2.	The ability to browse to IPFS attached to asset transactions as messages.
 
 3.	The ability to create an address to certain specifications.  In order to use functions such as the ones outlined in 
     https://github.com/MangoFarmAssets/rips/blob/master/rip-0011.mediawiki
