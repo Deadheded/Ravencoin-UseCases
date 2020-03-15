@@ -28,7 +28,7 @@ clients.
 3.	https://www.mangofarmassets.com/ . Here you have the functions outlined at 
     https://github.com/MangoFarmAssets/rips/blob/master/rip-0011.mediawiki . The ability to encrypt a file and upload to IPFS. 
     Upload to IPFS a 2nd file (json file), encrypted with the receivers PGP public key, which contains the key and location of the 1st 
-    encrypted file.  Then send asset to receiver that only receiver address can read and then use to unlock and read the 1st file.  
+    encrypted file.  Then send asset to receiver that only receiver address can read and then use to unlock and read the 1st file.
     “Pirate messaging” a term coined by others.
     
 All three of these sites have wallet functions.  Could this wallet attached to these and other websites so all function could be 
