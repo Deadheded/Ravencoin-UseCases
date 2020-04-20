@@ -9,7 +9,7 @@ Cost $0.25 or 5 RVN.
 4.	Chooses weather to encrypt content or not
 5.	Chooses weather to offer their services to local community.  Adds needed information for this.  (Secondary function)
 6.	Consumer adds RVN address or one is created at mangofarmsassets.com to hold asset
-7.	Consumer pays $0.25 to create and issue unique asset [1}
+7.	Consumer pays $0.25 to create and issue unique asset [1]
 8.	Asset is issued to address from step 6
 9.	A persistent copy of the consumers testing data can be produced at any time and remains under the control of the test recipient 
 
