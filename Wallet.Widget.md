@@ -9,7 +9,7 @@ could exist at a time.  This would provide proof of identity for the device.  Th
 
 1.  Access to subscriptions sites on the web.
 
-2.  Subscription services such as Netflis, Hulu, Rocu, ect... to stop account sharing.  Accounts could have a limited number of addresses.
+2.  Subscription services such as Netflix, Hulu, Rocu, ect... to stop account sharing.  Accounts could have a limited number of addresses.
 
 3.  Employer network access.  Small to large companies could manage access to their in house network.
 
