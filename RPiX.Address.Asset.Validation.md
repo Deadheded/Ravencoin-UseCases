@@ -2,45 +2,30 @@
 
 Based on the Methodology proposed by Mangofarmsassets
 
-We propose the following methodology to build Address Name Tags:
-
-A. Create Address Name Tag (Recipient)
-
-Users who want to name their Ravencoin addresses can create an Address Name Tag in the following manner:
+A. We propose the following methodology to build Address Metadata Tags:
 
 Generate a new Ravencoin address (or use an existing one).
-Create a JSON file with the following information to name the address:
 
-{
-	"tag": {
-		"tag_type": "ANT",
-		"ravencoin_address": "<Ravencoin address from step 1>",
-		"address_name": "<name that you want to give to the Ravencoin address>",
-		"address_name_mime": "text/x-markdown; charset=UTF-8",
-		"icon": "<base64 encoded png image at 64x64>"
-	},
-	"metadata_signature": {
-			"signature_hash": "<SHA256 hash of the immediately preceding metadata JSON object {...}>",
-			"signature": "<Ravencoin signed signature_hash>"
-	}
-}
+Create an IPFS file with information relevant to the tag, such as the PGP public key for an Encryption Address Metadata Tag under RIP11,
+an Address Name Tag under RIP12, or an Address Identity Tag under RIP13 and add the file to IPFS to obtain a hash.
 
-Add the JSON file to IPFS and obtain an IPFS hash.
+"Tag" the Ravencoin address by issuing and sending a unique asset to the address, adding the IPFS hash from step 2 as the asset metadata
+and using the following naming convention (excluding the brackets): MAIN_ASSET#TAG_[address_hash]
 
-Issue a unique asset and send it to the Ravencoin address, adding the IPFS hash from step 3 as the asset metadata and using the
-following naming convention (excluding the brackets): MAIN_ASSET#ANT_[address_hash]
+“MAIN_ASSET” can be any main asset name no more than 10 characters in length, for a total asset name length of up to 23 characters (the
+remaining 7 characters are reserved for potential future functionality). Users, wallet providers and other second layer solutions may
+choose to use a single main asset name for all Address Metadata Tags they or their platforms generate. This reduces the cost of 
+generating each Address Metadata Tag to the 5 RVN burn fee.
 
-“MAIN_ASSET” can be any main asset name no more than 10 characters in length, for a total asset name length of up to 23 characters
-(the remaining 7 characters are reserved for potential future functionality). Users, wallet providers and other second layer solutions
-may choose to use a single main asset name for all Address Name Tags they or their platforms generate. This reduces the cost of
-generating each new Address Name Tag to the 5 RVN burn fee.
+“TAG” is a three-letter identifyer signifying the Address Metadata Tag being used. For example: (1) "PGP" is used in RIP11 to indicate 
+that the the unique asset carries a PGP public key for receiving encrypted metadata; (2) “ANT” is used in RIP12 to specify an Address 
 
-“ANT” appears as the first three letters after the unique asset tag # in the unique asset name. This signifies that the unique asset
-carries an Address Name Tag and facilitates protocol-level searching for Address Name Tags.
+Name Tag for the address; and (3) “AIT” is used in RIP13 to specify an Address Identity Tag for the address. Additional applications can 
+use any number of tags for this purpose.
 
-“address_hash” is the CRC32 hash of the Ravencoin address. Using this hash in the unique asset name acts as a checksum, allowing any
-sender to confirm that the Address Name Tag matches the address that holds it. For this purpose, the hash need not be cryptographically
-secure. CRC32 was selected due to its simplicity and short length (8 characters).
+“address_hash” is the CRC32 hash of the Ravencoin address. Using this hash in the unique asset name acts as a checksum, allowing any 
+sender to confirm that the encryption receiving asset matches the Ravencoin address that holds it. For this purpose, the hash need not 
+be cryptographically secure. CRC32 was selected due to its simplicity and short length (8 characters).
 
 B. Lookup Address Name Tag (Sender)
 
