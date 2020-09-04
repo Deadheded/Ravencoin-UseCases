@@ -1,4 +1,4 @@
-RVN.ID.Wallet (RIW)
+# RVN.ID.Wallet (RIW)
 
 The purpose of this wallet is to give 3rd party software a way to validate identity.  This is based on the Mangofarmsassets RIP 11~14.  A unique asset is generated with a 
 hash of the address in the RIW.  If the RIW is queried for an asset the wallet will return true/false and the full name of the asset.  Anyone can query the RVN BC to see 
