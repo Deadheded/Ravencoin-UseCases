@@ -8,7 +8,8 @@ KAAWWW sign up or any message board
 wallet address to full demographic information.  
 
 2.	The registering member would then send a 6 RVN transaction to the KAAWWW “membership” address using the contents of the “signature file” to sign the transaction 
-from the address the new member wishes to register.  Address would have to be compliant with mangofarmassets RIP 11~14.
+from the address the new member wishes to register.  Address would have to be compliant with mangofarmassets RIP 11~14. 
+https://github.com/MangoFarmAssets/rips/blob/master/rip-0011.mediawiki
 
 3.	The registering member would then enter the transaction ID into a form field on the website.
 
