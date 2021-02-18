@@ -1,0 +1,89 @@
+= A Distributed Personal Message Feed =
+
+==Abstract==
+
+A decentralized and censor proof publishing system using the RVN block chain and IPFS.  An alternative hosting and distribution model to centralized 
+services such as twatter, Gab, Parlor, and Telegram. 
+
+==Motivation==
+
+To create a global mass communication platform, where the end user is 100% in control of what content if viewed. 
+
+==Methodology== 	
+
+===Publishing a message===
+
+Using a web form or local application a person publishes a data set to the IPFS.  The data set would use a standard parsing json file to allow for the 
+proper orientation when viewing the “message”.  Example:
+
+<pre>
+{
+	"KAAWWW_standard": {
+		"metadata": {
+			"content_data": {
+				"icon": "<base 64 encoded png (64x64 is recommended)>",
+				“response”: “<true/false>”,
+				“publisher_handel”: “<name of entity being responded to>”,
+				“publishes_address”: “<address of publisher being responded to>”,
+				“repost”: “<true/false>”,
+				“reposted_author”: “<original publisher’s handle, @mangofarmassets>”,
+				“quote”: “<true/false>”,
+				"quote_hash": "<IPFS hash of quoted post>",
+				"message_text":"<Rules without rulers, governance without governors, Bit Boy Crypto>",
+				"warnings": "<all ages, mature only, viewer advise, violence, gore>",
+				"tags": "<#Baseball Cards, #Coins, #crypto, #BTC, #Kids>",
+				“KAAWWW_outs”: “<@TronBlack, @BruceFenton, @RVN, ect.>”
+			},
+			"admin_data": {
+				“author_asset”: “<unique asset tied to address with IPFS hash>”
+				"author_address": "<address publishing data set>",
+				“author_icon”: “<author’s choosing, in author asset IPFS file>”,
+				“author_picture”: “<picture associated with account, in author asset IPFS file >”
+				"author_handle": "<@deadheded, John Q. Public, ect…>",
+				“author_tagline”: “<cipher punks rule, in author asset IPFS file default or can be updated in form used to publish>”,
+				“description”: “<say as much or as little about publisher, in author asset IPFS file default or can be updated in form used to publish >”,
+				"channel":"<All Raven News>",
+				“verified”: “<true/false>”,
+				“verifying_entity”: “<name of 3rd party verification service>”,
+				“verifying_entity_url”: “<website>”,
+				“verification_crendentials”: “<web link>”,
+				"website": "<website>",
+				"contact_name": "<contact name>",
+				"website_url": "<website>",
+				"contact_email": "<contact email>",
+				“brave_verified”: “<true/false>”,
+				“BAT_address”: “<0xD4e876021Ef46Ef3430124c486B87D50c1a3efd0>”
+				
+			},
+			"other_data": {
+				"<key1>": "<value>",
+				"<key2>": "<value>",
+				"<key3>": "<value>"
+			},
+			"ipfs_attachments": [
+					"<IPFS hash for unencrypted attachment 1>",
+					"<IPFS hash for unencrypted attachment 2>",
+					"<IPFS hash for unencrypted attachment n>"
+			],
+			"url_links": [
+					"<url link 1>",
+					"<url link 2>",
+					"<url link n>"
+			]
+		},
+		"metadata_signature": {
+			"signature_hash": "<SHA256 hash of the immediately preceding metadata JSON object {...}>",
+			"signature": "<Ravencoin signed signature_hash>"
+		}
+	}
+}
+</pre>
+
+===Sharing Data===
+
+Once a message has been posted the IPFS hash is published to the RVN block chain by sending an asset and including the IPFS hash in the memo field.  The exact methodology needs to be discussed.  Anyone could watch for post from publishers they follow by watching the publisher’s address.  When a publisher wish to let the world know about a post they would simply include the IPFS hash in the memo field and send an asset to themselves.  If they were responding to another publisher’s post they could send the asset with the IPFS hash to the original publisher’s address.  Anyone watching the original publisher’s address could then see the replies. 
+Another method may be to send all assets to a single “publishing” address.  They viewers could monitor any posts to the system.  
+I am sure there are other ways to accomplish this that I have not discussed here.  The method that best serves the end users should be debated and implemented. 
+Although having a unique “membership” asset tied to the publishing address is not nessary to publish having one with IPFS hash attached would provide many features.  Much of the information contained in the above json example could be stored on IPFS when the unique asset is created.  It would also allow 3rd parties to verify the identity and validity of the publishing address.
+
+===Viewing Data===
