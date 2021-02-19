@@ -81,8 +81,8 @@ proper orientation when viewing the “message”.  Example:
 
 ===Sharing Data===
 
-Once a message has been posted the IPFS hash is published to the RVN block chain by sending an asset and including the IPFS hash in the memo field.  The exact 
-methodology needs to be discussed.  Anyone could watch for post from publishers they follow by watching the publisher’s address.  When a publisher wish to let 
+Once a message has been uploaded the IPFS hash is published to the RVN block chain by sending an asset and including the IPFS hash in the memo field.  The exact 
+methodology needs to be discussed.  Anyone could watch for posts from publishers they follow by watching the publisher’s address.  When a publisher wishes to let 
 the world know about a post they would simply include the IPFS hash in the memo field and send an asset to themselves.  If they were responding to another 
 publisher’s post they could send the asset with the IPFS hash to the original publisher’s address.  Anyone watching the original publisher’s address could then 
 see the replies. 
@@ -90,7 +90,7 @@ see the replies.
 Another method may be to send all assets to a single “publishing” address.  They viewers could monitor any posts to the system.  
 
 I am sure there are other ways to accomplish this that I have not discussed here.  The method that best serves the end users should be debated and implemented. 
-Although having a unique “membership” asset tied to the publishing address is not nessary to publish having one with IPFS hash attached would provide many features.  
+Although having a unique “membership” asset tied to the publishing address is not nessary to publish, having one with IPFS hash attached would provide many features.  
 Much of the information contained in the above json example could be stored on IPFS when the unique asset is created.  It would also allow 3rd parties to verify the 
 identity and validity of the publishing address.
 
