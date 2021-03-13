@@ -6,7 +6,7 @@ If a news outlet wishes to run a story they could purchase the headline and teas
 If a consumer clicked to read the article it would link back to the original creator’s site so that they could enjoy the advertisement 
 revenue.  
 
-If a news outlet wised to run the story on their own site and keep the advertising revenue they could pay a larger fee ($500 ???) to 
+If a news outlet wished to run the story on their own site and keep the advertising revenue they could pay a larger fee ($500 ???) to 
 have the entire article.
 
 This would reward popular journalism and drive more revenue to smaller outlets and independent journalists. 
