@@ -98,6 +98,8 @@ identity and validity of the publishing address.
 
 Any web site could use the json parsing files to display published data in the correct format.  A local web form could also be used or a local application.
 
+Using API any 3rd party can parse the IPFS hash from the "message" field of an asset transaction.  https://rvnt.cryptoscope.io/api/#getaddressmessages
+
 Address can be watched for transactions containing IPFS hashes and then display the data.  An end user could decide what address to follow and/or block.  Message 
 management could be a competing factor for 3rd party viewers. 
 
