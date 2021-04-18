@@ -18,64 +18,63 @@ proper orientation when viewing the “message”.  Example:
 
 <pre>
 {
-	"KAAWWW_standard": {
-		"metadata": {
-			"content_data": {
-				"icon": "<base 64 encoded png (64x64 is recommended)>",
-				“response”: “<true/false>”,
-				“publisher_handel”: “<name of entity being responded to>”,
-				“publishes_address”: “<address of publisher being responded to>”,
-				“repost”: “<true/false>”,
-				“reposted_author”: “<original publisher’s handle, @mangofarmassets>”,
-				“quote”: “<true/false>”,
-				"quote_hash": "<IPFS hash of quoted post>",
-				"message_text":"<Rules without rulers, governance without governors, Bit Boy Crypto>",
-				"warnings": "<all ages, mature only, viewer advise, violence, gore>",
-				"tags": "<#Baseball Cards, #Coins, #crypto, #BTC, #Kids>",
-				“KAAWWW_outs”: “<@TronBlack, @BruceFenton, @RVN, ect.>”
-			},
-			"admin_data": {
-				“author_asset”: “<unique asset tied to address with IPFS hash>”
-				"author_address": "<address publishing data set>",
-				“author_icon”: “<author’s choosing, in author asset IPFS file>”,
-				“author_picture”: “<picture associated with account, in author asset IPFS file >”
-				"author_handle": "<@deadheded, John Q. Public, ect…>",
-				“author_tagline”: “<cipher punks rule, in author asset IPFS file default or can be updated in form used to publish>”,
-				“description”: “<say as much or as little about publisher, in author asset IPFS file default or can be updated in form used to publish >”,
-				"channel":"<All Raven News>",
-				“verified”: “<true/false>”,
-				“verifying_entity”: “<name of 3rd party verification service>”,
-				“verifying_entity_url”: “<website>”,
-				“verification_crendentials”: “<web link>”,
-				"website": "<website>",
-				"contact_name": "<contact name>",
-				"website_url": "<website>",
-				"contact_email": "<contact email>",
-				“brave_verified”: “<true/false>”,
-				“BAT_address”: “<0xD4e876021Ef46Ef3430124c486B87D50c1a3efd0>”
-				
-			},
-			"other_data": {
-				"<key1>": "<value>",
-				"<key2>": "<value>",
-				"<key3>": "<value>"
-			},
-			"ipfs_attachments": [
-					"<IPFS hash for unencrypted attachment 1>",
-					"<IPFS hash for unencrypted attachment 2>",
-					"<IPFS hash for unencrypted attachment n>"
-			],
-			"url_links": [
-					"<url link 1>",
-					"<url link 2>",
-					"<url link n>"
-			]
-		},
-		"metadata_signature": {
-			"signature_hash": "<SHA256 hash of the immediately preceding metadata JSON object {...}>",
-			"signature": "<Ravencoin signed signature_hash>"
-		}
-	}
+   "KAAWWW_standard":{
+      "metadata":{
+         "content_data":{
+            "icon":"<base 64 encoded png (64x64 is recommended)>",
+            "response":"<true/false>",
+            "publisher_handel":"<name of entity being responded to>",
+            "publishes_address":"<address of publisher being responded to>",
+            "repost":"<true/false>",
+            "reposted_author":"<original publisher’s handle>",
+            "quote":"<true/false>",
+            "quote_hash":"<IPFS hash of quoted post>",
+            "message_text":"<Rules without rulers, governance without governors, Bit Boy Crypto>",
+            "warnings":"<all ages, mature only, viewer advise, violence, gore>",
+            "tags":"<#Baseball Cards, #Coins, #crypto, #BTC, #Kids>",
+            "KAAWWW_outs":"<TronBlack BruceFenton RVN ect.>"
+         },
+         "admin_data":{
+            "author_asset":"<unique asset tied to address with IPFS hash>",
+            "author_address":"<address publishing data set>",
+            "author_icon":"<author’s choosing in author asset IPFS file>",
+            "author_picture":"<picture associated with account in author asset IPFS file >",
+            "author_handle":"<deadheded John Q. Public ect…>",
+            "author_tagline":"<cipher punks rule in author asset IPFS file default or can be updated in form used to publish>",
+            "description":"<say as much or as little about publisher  in author asset IPFS file default or can be updated in form used to publish >",
+            "channel":"<All Raven News>",
+            "verified":"<true/false>",
+            "verifying_entity":"<Other party verification service>",
+            "verifying_entity_url":"<website>",
+            "verification_crendentials":"<web link>",
+            "website":"<website>",
+            "contact_name":"<contact name>",
+            "website_url":"<website>",
+            "contact_email":"<contact email>",
+            "brave_verified":"<true/false>",
+            "BAT_address":"<BAT address for tipping>"
+         },
+         "other_data":{
+            "<key1>":"<value>",
+            "<key2>":"<value>",
+            "<key3>":"<value>"
+         },
+         "ipfs_attachments":[
+            "<IPFS hash for unencrypted attachment 1>",
+            "<IPFS hash for unencrypted attachment 2>",
+            "<IPFS hash for unencrypted attachment n>"
+         ],
+         "url_links":[
+            "<url link 1>",
+            "<url link 2>",
+            "<url link n>"
+         ]
+      },
+      "metadata_signature":{
+         "signature_hash":"<SHA256 hash of the immediately preceding metadata JSON object {...}>",
+         "signature":"<Ravencoin signed signature_hash>"
+      }
+   }
 }
 </pre>
 
