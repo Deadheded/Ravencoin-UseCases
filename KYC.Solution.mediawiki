@@ -20,20 +20,20 @@ Charging exclusively in RVN for KYC has the additional benefit of helping to boo
 
 == High level requirements ==
 
-  1. Respect privacy and security of users.
+1. Respect privacy and security of users.
   
-  2. Simple, user-friendly experience that a novice user can complete in simple steps.
+2. Simple, user-friendly experience that a novice user can complete in simple steps.
   
-  3. No Fiat currency costs (e.g. no payments in dollars to external providers.)
+3. No Fiat currency costs (e.g. no payments in dollars to external providers.)
   
-  4. Payments in RVN are acceptable, especially to supporters for completing micro-tasks and to
-  engineers for developing the software system.
+4. Payments in RVN are acceptable, especially to supporters for completing micro-tasks and to
+engineers for developing the software system.
   
-  5. Open source software
+5. Open source software
   
-  6. Compliant with KYC regulations (e.g. provide reasonable protections against fake photoshopped
-  identification documents or identity thieves who have stolen large amounts of other people’s
-  identities trying to impersonate them.)
+6. Compliant with KYC regulations (e.g. provide reasonable protections against fake photoshopped
+identification documents or identity thieves who have stolen large amounts of other people’s
+identities trying to impersonate them.)
   
   
 == Two categories of KYC project proposals ==
@@ -59,11 +59,11 @@ improving our solutions or submit your own proposals.
 
 Persons holding both:
 
-  1. A modern passport with NFC chips. (USA, China, European Union and many more countries have
-  such passports issued in recent years).
+1. A modern passport with NFC chips. (USA, China, European Union and many more countries have
+such passports issued in recent years).
   
-  2. An NFC-capable mobile phone (iPhone 7 and above, and most recent Android devices)
-  Persons who do not meet the above criteria shall perform KYC through other RVN KYC solutions.
+2. An NFC-capable mobile phone (iPhone 7 and above, and most recent Android devices)
+Persons who do not meet the above criteria shall perform KYC through other RVN KYC solutions.
   
 == Technology enabler ==
 
@@ -79,24 +79,24 @@ cloned and is not running in an emulator. In other words, this method is secure.
 
 == Main algorithm ==
 
-  1. The user touches their passport with their phone to establish communication
+1. The user touches their passport with their phone to establish communication
   
-  2. The passport transmits the identity of its holder (e.g. name and date of birth) along with a digital
-  signature signed by the country issuing the passport proving that the data is real
+2. The passport transmits the identity of its holder (e.g. name and date of birth) along with a digital
+signature signed by the country issuing the passport proving that the data is real
   
-  3. A RVN server generates a cryptographic challenge to validate that the passport is not cloned
+3. A RVN server generates a cryptographic challenge to validate that the passport is not cloned
   
-  4. The phone passes the cryptographic challenge to the passport, the passport responds to the
-  challenge, and the response is sent back to the server. (The server is needed to guarantee that a
-  “hacked” versions of the app cannot perform fake KYCs)
+4. The phone passes the cryptographic challenge to the passport, the passport responds to the
+challenge, and the response is sent back to the server. (The server is needed to guarantee that a
+“hacked” versions of the app cannot perform fake KYCs)
   
 == Technical requirements ==
 
-  1. Front-end: A “React Native” library that can be integrated in the main RVN app, so that users do
-  not have to switch apps. It is acceptable if it encapsulates native iOS/Android components
+1. Front-end: A “React Native” library that can be integrated in the main RVN app, so that users do
+not have to switch apps. It is acceptable if it encapsulates native iOS/Android components
   
-  2. Back-end: ARVN server written in Ruby on Rails or Node.js using a MongoDB or MySQL
-  database. It is acceptable if it encapsulates libraries written in other languages
+2. Back-end: ARVN server written in Ruby on Rails or Node.js using a MongoDB or MySQL
+database. It is acceptable if it encapsulates libraries written in other languages
   
   
 == Comparables ==
