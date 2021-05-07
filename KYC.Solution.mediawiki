@@ -20,17 +20,12 @@ Charging exclusively in RVN for KYC has the additional benefit of helping to boo
 
 == High level requirements ==
 
-1. Respect privacy and security of users.
-  
-2. Simple, user-friendly experience that a novice user can complete in simple steps.
-  
-3. No Fiat currency costs (e.g. no payments in dollars to external providers.)
-  
+1. Respect privacy and security of users.  
+2. Simple, user-friendly experience that a novice user can complete in simple steps.  
+3. No Fiat currency costs (e.g. no payments in dollars to external providers.)  
 4. Payments in RVN are acceptable, especially to supporters for completing micro-tasks and to
-engineers for developing the software system.
-  
-5. Open source software
-  
+engineers for developing the software system.  
+5. Open source software  
 6. Compliant with KYC regulations (e.g. provide reasonable protections against fake photoshopped
 identification documents or identity thieves who have stolen large amounts of other people’s
 identities trying to impersonate them.)
