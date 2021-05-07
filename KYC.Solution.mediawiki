@@ -10,7 +10,7 @@ fiat currency because it is not possible to programmatically complete 100% of KY
 percentage has to be manually performed by human workers who are paid in fiat currency. Thankfully,
 the RVN community already has a large number of people who are willing to accept RVN for their
 services and supporters who are willing to spend RVN in order to verify their identity. Software
-engineers are be willing to write open source software in exchange for RVN, and non-engineers may be
+engineers are willing to write open source software in exchange for RVN, and non-engineers may be
 willing to help with the edge-case validations that the software cannot support. For example, imagine
 each KYC’ed person paid 5 RVN to perform their KYC, this would mean that thousands of people would
 spend thousands of RVN collectively to incentivize the contributors who will develop and operate a RVN
