@@ -33,7 +33,7 @@ engineers for developing the software system
 
 6. Compliant with KYC regulations (e.g. provide reasonable protections against fake photoshopped
 identification documents or identity thieves who have stolen large amounts of other people’s
-identities trying to impersonate them.)  
+identities trying to impersonate them.)
   
 == Two categories of KYC project proposals ==
 
@@ -60,10 +60,10 @@ Persons holding both:
 
 1. A modern passport with NFC chips. (USA, China, European Union and many more countries have
 such passports issued in recent years).
-  
+
 2. An NFC-capable mobile phone (iPhone 7 and above, and most recent Android devices)
 Persons who do not meet the above criteria shall perform KYC through other RVN KYC solutions.
-  
+
 == Technology enabler ==
 
 These passports have an embedded microchip that can cryptographically prove the identity of the
@@ -79,26 +79,27 @@ cloned and is not running in an emulator. In other words, this method is secure.
 == Main algorithm ==
 
 1. The user touches their passport with their phone to establish communication
-  
+
 2. The passport transmits the identity of its holder (e.g. name and date of birth) along with a digital
 signature signed by the country issuing the passport proving that the data is real
-  
+
 3. A RVN server generates a cryptographic challenge to validate that the passport is not cloned
-  
+
 4. The phone passes the cryptographic challenge to the passport, the passport responds to the
 challenge, and the response is sent back to the server. (The server is needed to guarantee that a
 “hacked” versions of the app cannot perform fake KYCs)
-  
+
 == Technical requirements ==
 
 1. Front-end: A “React Native” library that can be integrated in the main RVN app, so that users do
 not have to switch apps. It is acceptable if it encapsulates native iOS/Android components
-  
+
 2. Back-end: ARVN server written in Ruby on Rails or Node.js using a MongoDB or MySQL
 database. It is acceptable if it encapsulates libraries written in other languages
-  
-  
+
+
 == Comparables ==
+
 Almost all the subcomponents of the system exist as open source in various forms, but there is not one
 solution that covers the entire flow.
 
