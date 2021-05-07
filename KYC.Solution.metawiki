@@ -1,0 +1,115 @@
+= ePassport KYC =
+
+== Introduction on RVN KYC solutions ==
+
+The RVN Network needs a scalable identity verification (also known as KYC) solution that respects
+privacy while it guarantees that RVN is distributed to distinct, real individuals, not robots, and all legal
+regulations are properly observed. Existing KYC providers charge fiat currency (e.g. US dollars) for their
+services, making them impractical to use and scale to millions of people. These providers have to charge
+fiat currency because it is not possible to programmatically complete 100% of KYC validations, since a
+percentage has to be manually performed by human workers who are paid in fiat currency. Thankfully,
+the RVN community already has a large number of people who are willing to accept RVN for their
+services and supporters who are willing to spend RVN in order to verify their identity. Software
+engineers are be willing to write open source software in exchange for RVN, and non-engineers may be
+willing to help with the edge-case validations that the software cannot support. For example, imagine
+each KYC’ed person paid 5 RVN to perform their KYC, this would mean that thousands of people would
+spend thousands of RVN collectively to incentivize the contributors who will develop and operate a RVN
+KYC solution. In this example, this is a lot of RVN, which can be distributed directly to the developers
+who would write the KYC software and to community members who perform the manual validations.
+Charging exclusively in RVN for KYC has the additional benefit of helping to bootstrap the RVN economy.
+
+== High level requirements ==
+
+  1. Respect privacy and security of users.
+  
+  2. Simple, user-friendly experience that a novice user can complete in simple steps.
+  
+  3. No Fiat currency costs (e.g. no payments in dollars to external providers.)
+  
+  4. Payments in RVN are acceptable, especially to supporters for completing micro-tasks and to
+  engineers for developing the software system.
+  
+  5. Open source software
+  
+  6. Compliant with KYC regulations (e.g. provide reasonable protections against fake photoshopped
+  identification documents or identity thieves who have stolen large amounts of other people’s
+  identities trying to impersonate them.)
+  
+  
+== Two categories of KYC project proposals ==
+
+There are two kinds of KYC project proposals: (1) exclusively software KYC solutions that require no
+humans to verify identification documents, and (2) proposals that require both software to orchestrate
+the KYC process and human operators of the software to perform document verifications or other tasks.
+Software exclusive solutions are good because they need no human labor but they can’t cover all
+persons given the varieties of documents, countries and languages. Thus, we need both kinds of
+solutions.
+
+== This KYC proposal ==
+
+This proposal is of the first category, i.e., a fully automated solution that allows a Pioneer to KYC
+themselves using only software, without the need of any human verifier. Refer to the other Core Team’s
+project proposal “Decentralized KYC (video chat)” for an example of a second-category solution that
+involves human verifiers. 
+
+We are open to more ideas on how to perform compliant KYC to all persons. Share your suggestions on
+improving our solutions or submit your own proposals. 
+
+== Applicable users of this proposed KYC solution ==
+
+Persons holding both:
+
+  1. A modern passport with NFC chips. (USA, China, European Union and many more countries have
+  such passports issued in recent years).
+  
+  2. An NFC-capable mobile phone (iPhone 7 and above, and most recent Android devices)
+  Persons who do not meet the above criteria shall perform KYC through other RVN KYC solutions.
+  
+== Technology enabler ==
+
+These passports have an embedded microchip that can cryptographically prove the identity of the
+holder and cryptographically prove that the passport itself is an authentic, non-cloned, non-emulated
+passport issued by a real country. RVN is a crypto project and relying on cryptography for the basis of
+KYC identification seems appropriate.
+
+Technical details: The main idea is that the chip contains identity data signed by the issuing country’s
+private keys. It also contains an unrecoverable private key, whose public key is also signed by the issuing
+country. This private key is used by the chip to prove that it represents a passport that has not been
+cloned and is not running in an emulator. In other words, this method is secure. 
+
+== Main algorithm ==
+
+  1. The user touches their passport with their phone to establish communication
+  
+  2. The passport transmits the identity of its holder (e.g. name and date of birth) along with a digital
+  signature signed by the country issuing the passport proving that the data is real
+  
+  3. A RVN server generates a cryptographic challenge to validate that the passport is not cloned
+  
+  4. The phone passes the cryptographic challenge to the passport, the passport responds to the
+  challenge, and the response is sent back to the server. (The server is needed to guarantee that a
+  “hacked” versions of the app cannot perform fake KYCs)
+  
+== Technical requirements ==
+
+  1. Front-end: A “React Native” library that can be integrated in the main RVN app, so that users do
+  not have to switch apps. It is acceptable if it encapsulates native iOS/Android components
+  
+  2. Back-end: ARVN server written in Ruby on Rails or Node.js using a MongoDB or MySQL
+  database. It is acceptable if it encapsulates libraries written in other languages
+  
+  
+== Comparables ==
+Almost all the subcomponents of the system exist as open source in various forms, but there is not one
+solution that covers the entire flow.
+
+== Help needed ==
+
+In trying to make the RVN ecosystem as modular and inclusive as possible, thus we are looking for
+software engineers and engineering leads who are interested in leading this project under the Open-
+Source software license).
+
+== Incentives ==
+
+The RVN foundation will allocate the RVN donated by the community across the development and
+operation team of this project.
