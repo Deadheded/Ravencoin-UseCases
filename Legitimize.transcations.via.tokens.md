@@ -1,4 +1,4 @@
-Legitimization of transactions
+# Legitimization of transactions
 
 Here is another way of utilizing tokens for legitimizing transactions: donations to a charity
 
